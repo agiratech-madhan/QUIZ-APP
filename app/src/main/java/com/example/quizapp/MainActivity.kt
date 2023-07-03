@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity() {
 
             if (editTextName.text.isEmpty()) {
                 Toast.makeText(this, "Please Type Something", Toast.LENGTH_SHORT).show()
-            }else{
-                val intent=Intent(this, QuizQuestionActivity::class.java)
+            } else {
+                val intent = Intent(this, QuizQuestionActivity::class.java)
+                intent.putExtra(Constants.USERNAME, editTextName.text.toString())
                 startActivity(intent)
                 finish()
             }

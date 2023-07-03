@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="Welcome"
+                android:text="Please Enter Your Name"
                 android:textColor="#7A8089"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -62,15 +62,13 @@
                 android:layout_marginTop="20dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="match_parent"
                     android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
                     android:inputType="textCapWords"
                     android:textColor="#363A43 "
                     android:textColorHint="#7A8089" />
-
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
