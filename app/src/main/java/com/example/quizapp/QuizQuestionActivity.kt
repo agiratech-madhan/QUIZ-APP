@@ -32,6 +32,8 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_quiz_question)
 
         mUserName = intent.getStringExtra(Constants.USERNAME)
+        Log.d("UserNames", mUserName!!)
+//        Log.d("UserNames", mUserName!!))
 
         progressBar = findViewById(R.id.progress_bar)
         progressValue = findViewById(R.id.progress_value)
@@ -153,7 +155,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
                         }
                         else -> {
                             val intent = Intent(this, ResultActivity::class.java)
-                            intent.putExtra(Constants.USERNAME, mUserName)
+                            intent.putExtra(Constants.USERNAME, mUserName.toString())
                             intent.putExtra(Constants.CORRECT_ANSWERS, mCurrentAnswer)
                             intent.putExtra(Constants.TOTAL_QUESTIONS, questionList?.size)
                             startActivity(intent)

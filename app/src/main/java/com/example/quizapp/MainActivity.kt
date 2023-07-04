@@ -3,6 +3,7 @@ package com.example.quizapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please Type Something", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, QuizQuestionActivity::class.java)
+                Log.d("UserName", editTextName.text.toString())
                 intent.putExtra(Constants.USERNAME, editTextName.text.toString())
                 startActivity(intent)
                 finish()

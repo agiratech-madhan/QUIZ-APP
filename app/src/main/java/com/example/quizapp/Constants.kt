@@ -3,7 +3,7 @@ package com.example.quizapp
 object Constants {
  const val USERNAME:String="user_name"
  const val TOTAL_QUESTIONS:String="total_questions"
- const val CORRECT_ANSWERS:String="user_name"
+ const val CORRECT_ANSWERS:String="correct_answers"
     fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>()
 
